@@ -42,6 +42,26 @@ namespace TestProject1
 
             }
         }
+
+        [TestClass]
+        public class Testjednostkowy3
+        {
+            [TestMethod]
+            public void Test1()
+            {
+                double x1, x2;
+                var a = 5;
+                var b = 6;
+                var c = 7;
+                zadanie4.obliczanie.rownaniekwadratowe(a, b, c, out x1, out x2);
+                Assert.AreEqual(x1, double.NaN);
+                Assert.AreEqual(x2, double.NaN);
+
+
+            }
+        }
+
+
     }
 }
 
