@@ -20,27 +20,28 @@ namespace zadanie4
                 x2 = double.NaN;
             }
 
-            static void Main(string[] args)
+
+        }
+        static void Main(string[] args)
+        {
+            try
             {
-                try
-                {
-                    Console.Write("Podaj Wartosc dla a = ");
-                    double a = double.Parse(Console.ReadLine());
+                Console.Write("Podaj Wartosc dla a = ");
+                double a = double.Parse(Console.ReadLine());
 
-                    Console.Write("Podaj Wartosc dla b = ");
-                    double b = double.Parse(Console.ReadLine());
+                Console.Write("Podaj Wartosc dla b = ");
+                double b = double.Parse(Console.ReadLine());
 
-                    Console.Write("Podaj Wartosc dla c = ");
-                    double c = double.Parse(Console.ReadLine());
+                Console.Write("Podaj Wartosc dla c = ");
+                double c = double.Parse(Console.ReadLine());
 
-                    double x1, x2;
-                    rownaniekwadratowe(a, b, c, out x1, out x2);
-                    Console.WriteLine("Wartosc X1 = " + x1 + ", X2 = " + x2);
-                }
-                catch (Exception exc)
-                {
-                    Console.Error.WriteLine(exc.Message);
-                }
+                double x1, x2;
+                rownaniekwadratowe(a, b, c, out x1, out x2);
+                Console.WriteLine("Wartosc X1 = " + x1 + ", X2 = " + x2);
+            }
+            catch (Exception exc)
+            {
+                Console.Error.WriteLine(exc.Message);
             }
         }
     }
